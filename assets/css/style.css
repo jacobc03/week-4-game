@@ -1,0 +1,30 @@
+body {
+	background-image: url("../images/starwars.jpg");
+	
+}
+h1 {
+	text-align: right;
+	font-size: 70px;
+}
+h2{
+	font-size: 35px;
+	color: #ffffff;
+
+}
+p {
+	text-align: center;
+}
+
+.jediBox{
+	border:5px solid green;
+	padding: 10px;
+	background-color: #ffffff;
+	width: 190px;
+	margin:5px;
+}
+
+.jedi {
+	height: 120px;
+	width: 160px;
+	}
+	
