@@ -1,71 +1,79 @@
 # week-4-game
 
-Week 4 Assignment
+# Week 4 Assignment
 
-Overview
-
+### Overview
 In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
 
-Remember
+### Remember
 
 You will be fully capable of doing this homework by the end of Saturday's class.
 
-Before You Begin
+### Before You Begin
 
-Create a new GitHub repo called week-4-game, then clone it to your computer.
+1. Create a new GitHub repo called `week-4-game`, then clone it to your computer.
 
-Inside the week-4-game folder, create the following: index.html, composer.json and index.php.
+2. Inside the `week-4-game` folder, create the following: `index.html`, `composer.json` and `index.php`.
+  * Place the appropriate content in the `composer.json` and `index.php` files, so you can deploy your game to Heroku.
 
-Place the appropriate content in the composer.json and index.php files, so you can deploy your game to Heroku.
-Still inside the week-4-game directory, make a folder called assets.
+3. Still inside the `week-4-game` directory, make a folder called `assets`.
+    * Inside the `assets` directory, make three additional folders: `javascript`, `css` and `images`.
+      * In the `javascript` folder, make a file called `game.js`.
+      * In the `css` folder, make a file called `style.css`.
+      * In the `css` folder, make a file called `reset.css`. Paste into it the code found from the Meyerweb Reset.
+      * In the images folder, save any of the images you plan on using.
 
-Inside the assets directory, make three additional folders: javascript, css and images.
-In the javascript folder, make a file called game.js.
-In the css folder, make a file called style.css.
-In the css folder, make a file called reset.css. Paste into it the code found from the Meyerweb Reset.
-In the images folder, save any of the images you plan on using.
-Push the above changes to GitHub.
+4. Push the above changes to GitHub. 
 
-Choose whichever game you want to make from the choices below. The CrystalsCollector game is easier than making the Star Wars RPG, but you'll get a more comprehensive review with the Star Wars exercise.
+5. Choose whichever game you want to make from the choices below. The CrystalsCollector game is easier than making the Star Wars RPG, but you'll get a more comprehensive review with the Star Wars exercise.
 
-Option Two: Star Wars RPG Game (Normal)
 
-Star Wars
 
-Watch the demo.
+### Option Two: Star Wars RPG Game (Normal)
+![Star Wars](Images/2-StarWars.jpg)
 
-Here's how the app works:
 
-When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game.
+1. [Watch the demo](homework_demos/starwars_demo.mp4).
 
-The player must then defeat all of the remaining fighters. Enemies should be moved to a different area of the screen.
+2. Here's how the app works:
 
-The player chooses an opponent by clicking on an enemy's picture.
+	* When the game starts, the player will choose a character by clicking on the fighter's picture. The player will fight as that character for the rest of the game.
 
-Once the player selects an opponent, that enemy is moved to a defender area.
+	* The player must then defeat all of the remaining fighters. Enemies should be moved to a different area of the screen.
 
-The player will now be able to click the attack button.
+	* The player chooses an opponent by clicking on an enemy's picture.
 
-Whenever the player clicks attack, their character damages the defender. The opponent will lose HP (health points). These points are displayed at the bottom of the defender's picture.
-The opponent character will instantly counter the attack. When that happens, the player's character will lose some of their HP. These points are shown at the bottom of the player character's picture.
-The player will keep hitting the attack button in an effort to defeat their opponent.
+	* Once the player selects an opponent, that enemy is moved to a `defender area`.
 
-When the defender's HP is reduced to zero or below, remove the enemy from the defender area. The player character can now choose a new opponent.
-The player wins the game by defeating all enemy characters. The player loses the game the game if their character's HP falls to zero or below.
+	* The player will now be able to click the `attack` button.
+		* Whenever the player clicks `attack`, their character damages the defender. The opponent will lose `HP` (health points). These points are displayed at the bottom of the defender's picture. 
+		* The opponent character will instantly counter the attack. When that happens, the player's character will lose some of their `HP`. These points are shown at the bottom of the player character's picture.
 
-Game design notes:
+3. The player will keep hitting the attack button in an effort to defeat their opponent.
+	* When the defender's `HP` is reduced to zero or below, remove the enemy from the `defender area`. The player character can now choose a new opponent.
 
-Each character in the game has 3 attributes: Health Points, Attack Power and Counter Attack Power.
+4. The player wins the game by defeating all enemy characters. The player loses the game the game if their character's `HP` falls to zero or below.
 
-Each time the player attacks, their character's Attack Power increases by its base Attack Power.
+##### Game design notes:
+* Each character in the game has 3 attributes: `Health Points`, `Attack Power` and `Counter Attack Power`.
 
-For example, if the base Attack Power is 6, each attack will increase the Attack Power by 6 (12, 18, 24, 30 and so on).
-The enemy character only has Counter Attack Power.
+* Each time the player attacks, their character's Attack Power increases by its base Attack Power. 
+	* For example, if the base Attack Power is 6, each attack will increase the Attack Power by 6 (12, 18, 24, 30 and so on).
+* The enemy character only has `Counter Attack Power`. 
+	* Unlike the player's `Attack Points`, `Counter Attack Power` never changes.
 
-Unlike the player's Attack Points, Counter Attack Power never changes.
-The Health Points, Attack Power and Counter Attack Power of each character must differ.
+* The `Health Points`, `Attack Power` and `Counter Attack Power` of each character must differ.
 
-No characters in the game can heal or recover Health Points.
+* No characters in the game can heal or recover Health Points. 
+	* A winning player must pick their characters wisely by first fighting an enemy with low `Counter Attack Power`. This will allow them to grind `Attack Power` and to take on enemies before they lose all of their `Health Points`. Healing options would mess with this dynamic.
 
-A winning player must pick their characters wisely by first fighting an enemy with low Counter Attack Power. This will allow them to grind Attack Power and to take on enemies before they lose all of their Health Points. Healing options would mess with this dynamic.
-Your players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing the strongest player.
+* Your players should be able to win and lose the game no matter what character they choose. The challenge should come from picking the right enemies, not choosing the strongest player.
+
+-------
+### One More Thing
+If you have any questions about this project or about the material we covered, the instructor and your TAs are only a Slack message away.
+
+**Good Luck!**
+
+## Copyright
+Coding Boot Camp (C) 2016. All Rights Reserved.
